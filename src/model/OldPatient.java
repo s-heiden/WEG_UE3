@@ -4,150 +4,134 @@ import javax.faces.bean.ManagedBean;
 
 @ManagedBean(name = "oldPatient")
 public class OldPatient {
-    private String oldFirstName = "Susanne";
-    private String oldLastName = "Muster";
-    private String oldEmail = "meinPostfach@mail.com";
-    private int oldSVN = 1234;
-    private String oldBirthdate = "01.01.1990";
-    private String oldGender = "w";
-    private int oldDiastolicPressure = 75;
-    private int oldMinimumDiastolicPressure = 60;
-    private int oldMaximumDiastolicPressure = 85;
-    private int oldSystolicPressure = 115;
-    private int oldMinimumSystolicPressure = 100;
-    private int oldMaximumSystolicPressure = 130;
-    private int oldHeartRate = 75;
-    private String oldNote = "Ihr Kommentar";
+    private String firstName = "Susanne";
+    private String lastName = "Muster";
+    private String email = "meinPostfach@mail.com";
+    private int svn = 1234;
+    private String birthdate = "01.01.1990";
+    private String gender = "w";
+    private int diastolicPressure = 75;
+    private int minimumDiastolicPressure = 60;
+    private int maximumDiastolicPressure = 85;
+    private int systolicPressure = 115;
+    private int minimumSystolicPressure = 100;
+    private int maximumSystolicPressure = 130;
+    private int heartRate = 75;
+    private String note = "Ihr Kommentar";
 
     public String submit() {
         return "patientdata.xhtml";
     }
 
-    public int getOldMinimumDiastolicPressure() {
-        return oldMinimumDiastolicPressure;
+    public int getMinimumDiastolicPressure() {
+        return minimumDiastolicPressure;
     }
 
-    public void setOldMinimumDiastolicPressure(int oldMinimumDiastolicPressure) {
-        this.oldMinimumDiastolicPressure = oldMinimumDiastolicPressure;
+    public void setMinimumDiastolicPressure(int minimumDiastolicPressure) {
+        this.minimumDiastolicPressure = minimumDiastolicPressure;
     }
 
-    public int getOldMaximumDiastolicPressure() {
-        return oldMaximumDiastolicPressure;
+    public int getMaximumDiastolicPressure() {
+        return maximumDiastolicPressure;
     }
 
-    public void setOldMaximumDiastolicPressure(int oldMaximumDiastolicPressure) {
-        this.oldMaximumDiastolicPressure = oldMaximumDiastolicPressure;
+    public void setMaximumDiastolicPressure(int maximumDiastolicPressure) {
+        this.maximumDiastolicPressure = maximumDiastolicPressure;
     }
 
-    public int getOldMinimumSystolicPressure() {
-        return oldMinimumSystolicPressure;
+    public int getMinimumSystolicPressure() {
+        return minimumSystolicPressure;
     }
 
-    public void setOldMinimumSystolicPressure(int oldMinimumSystolicPressure) {
-        this.oldMinimumSystolicPressure = oldMinimumSystolicPressure;
+    public void setMinimumSystolicPressure(int minimumSystolicPressure) {
+        this.minimumSystolicPressure = minimumSystolicPressure;
     }
 
-    public int getOldMaximumSystolicPressure() {
-        return oldMaximumSystolicPressure;
+    public int getMaximumSystolicPressure() {
+        return maximumSystolicPressure;
     }
 
-    public void setOldMaximumSystolicPressure(int oldMaximumSystolicPressure) {
-        this.oldMaximumSystolicPressure = oldMaximumSystolicPressure;
+    public void setMaximumSystolicPressure(int maximumSystolicPressure) {
+        this.maximumSystolicPressure = maximumSystolicPressure;
     }
 
-//    public int getOldMinimumHeartRate() {
-//        return oldMinimumHeartRate;
-//    }
-//
-//    public void setOldMinimumHeartRate(int oldMinimumHeartRate) {
-//        this.oldMinimumHeartRate = oldMinimumHeartRate;
-//    }
-//
-//    public int getOldMaximumHeartRate() {
-//        return oldMaximumHeartRate;
-//    }
-//
-//    public void setOldMaximumHeartRate(int oldMaximumHeartRate) {
-//        this.oldMaximumHeartRate = oldMaximumHeartRate;
-//    }
-
-    public String getOldFirstName() {
-        return oldFirstName;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setOldFirstName(String oldFirstName) {
-        this.oldFirstName = oldFirstName;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public String getOldLastName() {
-        return oldLastName;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setOldLastName(String oldLastName) {
-        this.oldLastName = oldLastName;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
-    public String getOldEmail() {
-        return oldEmail;
+    public String getEmail() {
+        return email;
     }
 
-    public void setOldEmail(String oldEmail) {
-        this.oldEmail = oldEmail;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public int getOldSVN() {
-        return oldSVN;
+    public int getSvn() {
+        return svn;
     }
 
-    public void setOldSVN(int oldSVN) {
-        this.oldSVN = oldSVN;
+    public void setSvn(int svn) {
+        this.svn = svn;
     }
 
-    public String getOldBirthdate() {
-        return oldBirthdate;
+    public String getBirthdate() {
+        return birthdate;
     }
 
-    public void setOldBirthdate(String oldBirthdate) {
-        this.oldBirthdate = oldBirthdate;
+    public void setBirthdate(String birthdate) {
+        this.birthdate = birthdate;
     }
 
-    public String getOldGender() {
-        return oldGender;
+    public String getGender() {
+        return gender;
     }
 
-    public void setOldGender(String oldGender) {
-        this.oldGender = oldGender;
+    public void setGender(String gender) {
+        this.gender = gender;
     }
 
-    public int getOldDiastolicPressure() {
-        return oldDiastolicPressure;
+    public int getDiastolicPressure() {
+        return diastolicPressure;
     }
 
-    public void setOldDiastolicPressure(int oldDiastolicPressure) {
-        this.oldDiastolicPressure = oldDiastolicPressure;
+    public void setDiastolicPressure(int diastolicPressure) {
+        this.diastolicPressure = diastolicPressure;
     }
 
-    public int getOldSystolicPressure() {
-        return oldSystolicPressure;
+    public int getSystolicPressure() {
+        return systolicPressure;
     }
 
-    public void setOldSystolicPressure(int oldSystolicPressure) {
-        this.oldSystolicPressure = oldSystolicPressure;
+    public void setSystolicPressure(int systolicPressure) {
+        this.systolicPressure = systolicPressure;
     }
 
-    public int getOldHeartRate() {
-        return oldHeartRate;
+    public int getHeartRate() {
+        return heartRate;
     }
 
-    public void setOldHeartRate(int oldHeartRate) {
-        this.oldHeartRate = oldHeartRate;
+    public void setHeartRate(int heartRate) {
+        this.heartRate = heartRate;
     }
 
-    public String getOldNote() {
-        return oldNote;
+    public String getNote() {
+        return note;
     }
 
-    public void setOldNote(String oldNote) {
-        this.oldNote = oldNote;
+    public void setNote(String note) {
+        this.note = note;
     }
 }

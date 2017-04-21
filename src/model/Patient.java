@@ -5,14 +5,14 @@ import java.time.LocalDateTime;
 public class Patient {
     private String id = "vital_data";
     private String name = "Vital Data";
-    private LocalDateTime timestamp = LocalDateTime.now();
+    private String timestamp = "";
     private int diastolicPressure = 80;
     private int systolicPressure = 120;
     private int heartRate = 60;
     private String pressureUnit = "mm Hg";
     private String heartRateUnit = "BPM";
 
-    public Patient(String id, String name, LocalDateTime timestamp, int diastolicPressure, int systolicPressure,
+    public Patient(String id, String name, String timestamp, int diastolicPressure, int systolicPressure,
                    int heartRate, String pressureUnit, String heartRateUnit) {
         this.id = id;
         this.name = name;
@@ -40,11 +40,11 @@ public class Patient {
         this.name = name;
     }
 
-    public LocalDateTime getTimestamp() {
+    public String getTimestamp() {
         return timestamp;
     }
 
-    public void setTimestamp(LocalDateTime timestamp) {
+    public void setTimestamp(String timestamp) {
         this.timestamp = timestamp;
     }
 

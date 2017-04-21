@@ -28,7 +28,7 @@
                             <tr>
                                 <td><label for="firstName">Vorname:</label></td>
                                 <td>
-                                    <h:inputText id="firstName" value="#{oldPatient.oldFirstName}">
+                                    <h:inputText id="firstName" value="#{oldPatient.firstName}">
                                         <f:validateLength minimum="3"></f:validateLength>
                                     </h:inputText>*
                                     <h:message class="errors" for="firstName"/>
@@ -37,32 +37,32 @@
                             <tr>
                                 <td><label for="lastName">Nachname:</label></td>
                                 <td>
-                                    <h:inputText id="lastName" value="#{oldPatient.oldLastName}">
+                                    <h:inputText id="lastName" value="#{oldPatient.lastName}">
                                         <f:validateLength minimum="3"></f:validateLength>
                                     </h:inputText>*
                                     <h:message class="errors" for="lastName"/>
                                 </td>
                             </tr>
                             <tr>
-                                <td><label for="oldEmail">E-Mail:</label></td>
+                                <td><label for="email">E-Mail:</label></td>
                                 <td>
-                                    <h:inputText id="oldEmail" value="#{oldPatient.oldEmail}" class="form-control">
+                                    <h:inputText id="email" value="#{oldPatient.email}" class="form-control">
                                         <f:validateRegex pattern=".+\@.+\..+"></f:validateRegex>
                                     </h:inputText>*
-                                    <h:message class="errors" for="oldEmail"/>
+                                    <h:message class="errors" for="email"/>
                                 </td>
                             </tr>
                             <tr>
-                                <td><label for="oldSVN">SVN:</label></td>
+                                <td><label for="svn">SVN:</label></td>
                                 <td>
-                                    <h:inputText id="oldSVN" value="#{oldPatient.oldSVN}">
+                                    <h:inputText id="svn" value="#{oldPatient.svn}">
                                     </h:inputText>*
                                 </td>
                             </tr>
                             <tr>
                                 <td><label for="dateOfBirth">Geburtsdatum:</label></td>
                                 <td>
-                                    <h:inputText id="dateOfBirth" class="form-control" value="#{oldPatient.oldBirthdate}">
+                                    <h:inputText id="dateOfBirth" class="form-control" value="#{oldPatient.birthdate}">
                                     </h:inputText>*
                                     <h:message class="errors" for="dateOfBirth"/>
                                 </td>
@@ -80,8 +80,8 @@
                             <tr>
                                 <td><label for="bloodPressureDia">Blutdruck Diastolisch:</label></td>
                                 <td>
-                                    <h:inputText id="bloodPressureDia" value="#{oldPatient.oldDiastolicPressure}">
-                                        <f:validateLongRange minimum="#{oldPatient.oldMinimumDiastolicPressure}" maximum="#{oldPatient.oldMaximumDiastolicPressure}"/>
+                                    <h:inputText id="bloodPressureDia" value="#{oldPatient.diastolicPressure}">
+                                        <f:validateLongRange minimum="#{oldPatient.minimumDiastolicPressure}" maximum="#{oldPatient.maximumDiastolicPressure}"/>
                                     </h:inputText>*
                                     <h:message class="errors" for="bloodPressureDia"/>
                                 </td>
@@ -89,8 +89,8 @@
                             <tr>
                                 <td><label for="bloodPressureSys">Blutdruck Systolisch:</label></td>
                                 <td>
-                                    <h:inputText id="bloodPressureSys" value="#{oldPatient.oldSystolicPressure}">
-                                        <f:validateLongRange minimum="#{oldPatient.oldMinimumSystolicPressure}" maximum="#{oldPatient.oldMaximumSystolicPressure}"/>
+                                    <h:inputText id="bloodPressureSys" value="#{oldPatient.systolicPressure}">
+                                        <f:validateLongRange minimum="#{oldPatient.minimumSystolicPressure}" maximum="#{oldPatient.maximumSystolicPressure}"/>
                                     </h:inputText>*
                                     <h:message class="errors" for="bloodPressureSys"/>
                                 </td>
@@ -98,7 +98,7 @@
                             <tr>
                                 <td><label for="pulse">Puls:</label></td>
                                 <td>
-                                    <h:inputText id="pulse" value="#{oldPatient.oldHeartRate}">
+                                    <h:inputText id="pulse" value="#{oldPatient.heartRate}">
                                     </h:inputText>*
                                     <h:message class="errors" for="pulse"/>
                                 </td>
