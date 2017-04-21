@@ -1,7 +1,5 @@
 package model;
 
-import java.time.LocalDateTime;
-
 public class Patient {
     private String id = "vital_data";
     private String name = "Vital Data";
@@ -86,10 +84,6 @@ public class Patient {
 
     public void setHeartRateUnit(String heartRateUnit) {
         this.heartRateUnit = heartRateUnit;
-    }
-
-    public String submit() {
-        return "patientdata.xhtml";
     }
 
 }

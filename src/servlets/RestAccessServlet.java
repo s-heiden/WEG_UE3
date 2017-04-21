@@ -17,20 +17,18 @@ public class RestAccessServlet extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         ApiCaller.getInstance().setURL("http://localhost:7777/rest/items/vital_data/history");
         PrintWriter out = response.getWriter();
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet FormServlet</title>");
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<pre>");
-            out.println(ApiCaller.getInstance().createLog());
-            out.println("</pre>");
-            out.println("</body>");
-            out.println("</html>");
-        }
-
-
+        out.println("<!DOCTYPE html>");
+        out.println("<html>");
+        out.println("<head>");
+        out.println("<title>Servlet FormServlet</title>");
+        out.println("</head>");
+        out.println("<body>");
+        out.println("<pre>");
+        out.println(ApiCaller.getInstance().createLog());
+        out.println("</pre>");
+        out.println("</body>");
+        out.println("</html>");
+    }
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)

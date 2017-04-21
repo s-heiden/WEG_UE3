@@ -1,6 +1,5 @@
 package rest;
 
-import helpers.DateHelper;
 import model.Patient;
 
 import javax.ws.rs.client.Client;
@@ -17,6 +16,7 @@ import java.util.List;
 public class ApiCaller {
     private static String url;
     private static ApiCaller instance = new ApiCaller();
+    private List<Patient> patients = new ArrayList<>();
 
     private ApiCaller() {
     }
@@ -25,17 +25,13 @@ public class ApiCaller {
         return instance;
     }
 
-    public void setURL(String url) {
-        this.url = url;
+    public void setURL(String restURL) {
+        url = restURL;
     }
-
 
     public List<Patient> getPatients() {
         return patients;
     }
-
-    private List<Patient> patients = new ArrayList<>();
-
 
     public String createLog() {
         Client client = ClientBuilder.newClient();
@@ -77,9 +73,7 @@ public class ApiCaller {
                     jsonArray.getJsonObject(i).getString("pressure_unit"),
                     jsonArray.getJsonObject(i).getString("heart_rate_unit")
             );
-            this.patients.add(patient);
+            patients.add(patient);
         }
     }
-
-
 }

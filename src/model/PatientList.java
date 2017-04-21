@@ -3,7 +3,6 @@ package model;
 import rest.ApiCaller;
 
 import javax.faces.bean.ManagedBean;
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -44,7 +43,7 @@ public class PatientList {
         }
     }
 
-    public void switchToRestApi(String url){
+    private void switchToRestApi(String url){
         ApiCaller.getInstance().setURL(url);
         ApiCaller.getInstance().initPatients();
         this.patients = ApiCaller.getInstance().getPatients();
